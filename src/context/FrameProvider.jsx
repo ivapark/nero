@@ -1,6 +1,6 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
-import { FrameContext, FrameUpdateContext } from "./FrameContext";
+import { FrameContext, FrameUpdateContext } from "./frameContext";
 import { defaultFrame } from "../constants/frames";
 
 export function FrameProvider({ children }) {

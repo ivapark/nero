@@ -64,7 +64,7 @@ const Camera = () => {
   const startCountdown = (count, callback) => {
     if (count > 0) {
       setCountdown(count);
-      setTimeout(() => startCountdown(count - 1, callback), 1);
+      setTimeout(() => startCountdown(count - 1, callback), 1000); // 1 second per countdown step
     } else {
       setCountdown(null);
       callback();
@@ -93,8 +93,8 @@ const Camera = () => {
         setTimeout(() => {
           takePhoto(true);
           count--;
-          setTimeout(takeNextPhoto, 1); // todo change back to 500
-        }, 1);
+          setTimeout(takeNextPhoto, 500); // todo change back to 500
+        }, 500);
       });
     };
 
