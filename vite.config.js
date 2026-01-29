@@ -6,6 +6,6 @@ export default defineConfig({
   base: "/nerofilm/",
   plugins: [react()],
   build: {
-    outDir: "build",
+    outDir: "dist",
   },
 });
